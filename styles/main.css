@@ -1,0 +1,15 @@
+body{
+	background-color: #ccc;
+	text-align: center;
+}
+
+#workContainer{
+	border: 1px solid black;
+}
+#breakContainer{
+	border: 1px solid black;
+}
+#timerContainer{
+	border: 1px solid black;
+	margin-top: 20px;
+}
