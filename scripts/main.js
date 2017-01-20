@@ -37,7 +37,7 @@ var timer = new Timer({
 });
 
 timer.on('end', function () {
-    document.getElementById('endNotice').innerHTML = 'Work time ended, break time starts';
+    document.getElementById('endNotice').innerHTML = "You're now on break!";
     audio.play();
     timer2.start(breakTime*60);
 });
@@ -55,7 +55,7 @@ var timer2 = new Timer({
 });
 
 timer2.on('end', function () {
-    document.getElementById('endNotice').innerHTML = 'Break time ended';
+    document.getElementById('endNotice').innerHTML = 'Cycle Complete!';
     $timeDisplay.innerHTML = 0;
     audio.play();
     timer2.off();
