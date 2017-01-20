@@ -4,38 +4,48 @@
  <title>FCC Pomodoro Clock</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
  <link rel="stylesheet" href="styles/main.css"/>
 </head>
 <body>
-<h1>FreeCodeCamp Pomodoro Clock</h1>
+<div id='tital'>
+<h1>Pomodoro Clock</h1>
+</div>
 <div class='container-fluid'>
- <div class='row'>
-  <div id='workContainer' class='col-xs-4 col-xs-offset-1'>
+ <div id='workBreak' class='row'>
+  <div id='workContainer' class='col-xs-5 col-xs-offset-1'>
+  <div id='workCenter'>
   	<h3>Work Time</h3>
-
+  	<p>(Minutes)</p>
   	 <button id='workUp' type='button'>⬆︎</button>
-  	<input id='workTime' type='number' value='3' min='0'></input>
+  	<input id='workTime' type='number' value='25' min='0'></input>
   	 <button id='workDown' type='button'>⬇︎</button>
-
+  	 </div>
   </div>
-  <div id='breakContainer' class='col-xs-4 col-xs-offset-2'>
+  <div id='breakContainer' class='col-xs-5'>
+  <div id='breakCenter'>
   	<h3>Break Time</h3>
-  	
+  	<p>(Minutes)</p>
   	<button id='breakUp' type='button'>⬆︎</button>
-  	<input id='breakTime' type='number' value='2' min='0'></input>
+  	<input id='breakTime' type='number' value='5' min='0'></input>
   	 <button id='breakDown' type='button'>⬇︎</button>
-
+</div>
   </div>
  </div>
 </div>
 <div class='container-fluid'>
  <div class='row'>
   <div id='timerContainer' class='col-xs-10 col-xs-offset-1'>
+  <div id='timeCenter'>
+    <div id='controlBtns'>
     <button id='startStop' type='button'>Start/Stop</button>
-  	<h3>Timer</h3>
+    <button id='reset'  type = 'button'>Reset</button>
+    </div>
+  	<h3>Time Remaining</h3>
   	<h5 id='endNotice'></h5>
   	<div id='timer'>00:00</div>
+  	</div>
   </div>
  </div>
 </div>
