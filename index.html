@@ -13,24 +13,34 @@
  <div class='row'>
   <div id='workContainer' class='col-xs-4 col-xs-offset-1'>
   	<h3>Work Time</h3>
-  	<div id='workTimer'></div>
+
+  	 <button id='workUp' type='button'>⬆︎</button>
+  	<input id='workTime' type='number' value='3' min='0'></input>
+  	 <button id='workDown' type='button'>⬇︎</button>
+
   </div>
   <div id='breakContainer' class='col-xs-4 col-xs-offset-2'>
   	<h3>Break Time</h3>
-  	<div id='breakTimer'></div>
+  	
+  	<button id='breakUp' type='button'>⬆︎</button>
+  	<input id='breakTime' type='number' value='2' min='0'></input>
+  	 <button id='breakDown' type='button'>⬇︎</button>
+
   </div>
  </div>
 </div>
 <div class='container-fluid'>
  <div class='row'>
   <div id='timerContainer' class='col-xs-10 col-xs-offset-1'>
+    <button id='startStop' type='button'>Start/Stop</button>
   	<h3>Timer</h3>
-  	<div id='timer'></div>
+  	<h5 id='endNotice'></h5>
+  	<div id='timer'>00:00</div>
   </div>
  </div>
 </div>
 
-
+<script type="text/javascript" src='scripts/node_modules/timer.js/src/timer.js'></script>
 <script type='text/javascript' src='scripts/main.js'></script>
 </body>
 </html>
